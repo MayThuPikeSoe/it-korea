@@ -1,0 +1,87 @@
+@media (max-width: 1240px) {
+  .navbar .btn-icon {
+    display: none;
+  }
+  nav header-menu {
+    width: 100%;
+  }
+  .card {
+    min-width: 400px;
+
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .card-img-top {
+    height: 200px;
+  }
+  .consultation-section td {
+    font-size: 11px;
+  }
+  .consultation-section a {
+    font-size: 10px;
+  }
+
+  .consultation-section .fa-display,
+  .fa-message {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggler .nav-toggler-icon {
+    color: white;
+    box-flex-group: white;
+  }
+  .navbar .btn-icon {
+    display: none;
+  }
+  .card {
+    min-width: 350px;
+    margin-left: 10px;
+  }
+  .footer-section img {
+    width: 80px;
+  }
+  .footer-section h4 {
+    font-size: 12px;
+  }
+  .footer-section .footer-logo,
+  .text {
+    padding-top: 50px;
+  }
+  .footer-section .text {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .glider-prev {
+    margin-left: 10px;
+  }
+  .glider-next {
+    margin-right: 10px;
+  }
+
+  .field-text {
+    width: 300px;
+  }
+
+  .footer-section img {
+    width: 80px;
+  }
+  .footer-section h4 {
+    font-size: 8px;
+  }
+  .footer-section p {
+    font-size: 10px;
+  }
+  .footer-section .text-white-50 {
+    padding-top: 0px;
+  }
+  .footer-section .footer-logo {
+    padding-top: 40px;
+  }
+  .footer-section .text {
+    padding-top: 40px;
+  }
+}

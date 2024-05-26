@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+}
+/* .bg-img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
+
+nav {
+  width: 100%;
+}
+nav heade-menu {
+  width: 100%;
+  margin-left: 200px;
+}
+.navbar.sticky {
+  background: #5096ff;
+}
+
+.btn-icon {
+  position: absolute;
+  top: 9%;
+  left: 87%;
+}
+
+.logo {
+  height: 40px;
+}
+.navbar a {
+  position: relative;
+}
+.navbar li a::after {
+  content: "";
+  position: absolute;
+  background-color: #dd3850;
+  height: 3px;
+  left: 0;
+  bottom: -3px;
+}
+nav a:hover::after {
+  width: 100%;
+}
+/**************** home section ******************/
+.home {
+  background-image: url(./images/image.jpeg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: brightness(0.8);
+  z-index: -1;
+}
+.home-text {
+  z-index: 4;
+  color: rgb(251, 248, 248);
+  font-weight: 800;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+.home-text h1 {
+  font-size: 24px;
+}
+.home-text .row {
+  margin-top: 120px;
+}
+.home-title {
+  color: #e5be74;
+}
+/**********member section *******************/
+
+.member-section .card {
+  width: 200px;
+  min-height: 250px;
+  margin-left: 10px;
+  transition: 0.5s;
+  transform: scale(0.9);
+}
+.glider {
+  scrollbar-width: none;
+}
+.member-section .card-img-top {
+  height: 250px;
+}
+
+.member-section .card:hover {
+  background: blue;
+  color: white;
+  transform: scale(1.1);
+}
+
+.member-section .card-item-text {
+  color: rgb(161, 157, 157);
+}
+
+/************** field section ***********/
+
+.field-section {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.field-section::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/building.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.field-text {
+  position: relative;
+  width: 500px;
+  padding-top: 50px;
+  color: rgb(41, 40, 40);
+  z-index: 2;
+}
+
+.field-section p {
+  color: #383839;
+}
+.field-section a {
+  font-size: 13px;
+  font-weight: 800;
+  border-color: #383839;
+  border-radius: 0%;
+}
+.field-section a:hover {
+  background-color: #b1abab;
+  color: white;
+}
+/******************** Business Section *************** */
+.business-section {
+  /* width: 100%;
+  height: 600px; */
+  position: relative;
+  padding: 50px 0;
+}
+.business-section::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/business.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 1;
+}
+.business-section .container {
+  position: relative;
+  z-index: 2;
+}
+.business-section .search {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border: 1px solid rgb(163, 161, 161);
+  margin: 0 auto;
+  background-color: white;
+}
+.business-section .search-input {
+  margin-bottom: 20px;
+  width: 400px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  background: transparent;
+}
+
+.business-section .search-icon {
+  color: #adaeb0;
+  padding-right: 10px;
+}
+.business-section .card {
+  background-color: #575c67;
+  margin-left: 20px;
+  margin-top: 30px;
+  transition: 0.7s;
+}
+.business-section .card:hover {
+  background-color: #171c61;
+}
+.business-section .card:hover .card-item-title {
+  color: #e5be74;
+}
+.business-section .card-item-title {
+  color: #018bb1;
+  font-size: 14px;
+}
+.business-section .card-item-text {
+  color: white;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.business-section .card-item-body {
+  color: #adaeb0;
+  font-size: 12px;
+}
+
+/****************  consultation section **************/
+.consultation-section .text-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.consultation-section .text-phone {
+  color: #171c61;
+  font-size: 35px;
+}
+.consultation-section .text-p {
+  font-size: 16px;
+  color: rgb(29, 30, 30);
+  font-weight: 500;
+}
+.consultation-section a {
+  font-size: 13px;
+  font-weight: 800;
+  width: 100%;
+  border-color: #565858;
+  border-radius: 0%;
+}
+.consultation-section a:hover {
+  background-color: #b1abab;
+  color: white;
+}
+.consultation-section .fa-display,
+.fa-message {
+  font-size: 19px;
+}
+.consultation-section .table-title-text {
+  font-size: 20px;
+}
+.consultation-section .table-title-date {
+  font-size: 14px;
+}
+.consultation-section td {
+  font-size: 13px;
+}
+.consultation-section .table-text {
+  color: rgb(80, 79, 79);
+  font-weight: 400;
+}
+.consultation-section .table-date {
+  color: rgb(181, 180, 178);
+  font-weight: 400;
+}
+
+/***************** footer section **************************/
+.footer-section {
+  background: #444444;
+}
+.footer-section h4 {
+  color: white;
+  font-size: 18px;
+}
+.footer-section .footer-logo {
+  padding-top: 70px;
+}
+.footer-section .footer-text {
+  color: #736e6e;
+}
+.footer-section .text {
+  padding-top: 70px;
+}
