@@ -9,6 +9,7 @@ $(document).ready(function () {
   });
 });
 
+// glider slider
 new Glider(document.getElementById("member-glider").querySelector(".glider"), {
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -62,3 +63,13 @@ const sr3 = ScrollReveal({
   reset: true,
 });
 sr2.reveal(".reveal-top", { delay: 200 });
+
+// Loading
+function loading() {
+  document.querySelector(".loader").classList.add("fade-out");
+}
+
+function fadeOut() {
+  setInterval(loading, 3000);
+}
+window.onload = fadeOut();

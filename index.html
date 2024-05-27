@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Itwizard</title>
-    <!-- <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    /> -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,14 +45,11 @@
         </div>
         <div class="logo">
           <a class="navbar-brand mx-0" href="#"
-            ><img
-              src="https://api.tagoplus.co.kr/files/download/SiteInfo/vOsDaYEy.png"
-              alt="logo"
-              class="logo"
+            ><img src="./images/logo.png" alt="logo" class="logo"
           /></a>
         </div>
         <button
-          class="navbar-toggler menu-toggler"
+          class="navbar-toggler menu-toggler bg-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -65,7 +62,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-lg-auto w-75 header-menu">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#home">다일소개</a>
+              <a class="nav-link ms-4 text-white" href="#home">다일소개</a>
             </li>
             <li class="nav-item">
               <a class="nav-link ms-4 text-white" href="#member-section"
@@ -96,12 +93,11 @@
         </div>
       </div>
     </nav>
-
-    <!-- <section class="home" id="home"></section> -->
+    <!-------------------- home section------------------- -->
     <section class="home" id="home">
       <div class="container home-text d-flex">
         <div class="row">
-          <div class="col-10">
+          <div class="col-10 col-sm-12">
             <div class="ps-3">
               <h1>
                 법무법인 다일은 <br />
@@ -113,7 +109,7 @@
         </div>
       </div>
     </section>
-    <!-- member section -->
+    <!------------------- member section ------------------------->
     <section class="member-section" id="member-section">
       <div class="container mb-5" id="member-glider">
         <h1 class="text-center py-3 reveal-top">다일 업무분야</h1>
@@ -216,10 +212,10 @@
       </div>
     </section>
 
-    <!---------Field Section---------------->
+    <!--------------------Field Section---------------------------->
     <section class="field-section" id="field-section">
       <div class="container field-text text-center">
-        <div>
+        <div class="reveal-top">
           <h3 class="my-3 fw-bolder">법무법인 다일 소개</h3>
           <p>
             법무법인 다일은 다년간의 경험과 노하우를 바탕으로 최고의 전문가와
@@ -233,7 +229,7 @@
       </div>
     </section>
 
-    <!--------business case section--------->
+    <!---------------------business case section----------------->
     <section class="business-section" id="business-section">
       <div class="container" id="business-glider">
         <h1 class="text-center reveal-top">다일 업무사례</h1>
@@ -400,10 +396,10 @@
         </div>
       </div>
     </section>
-    <!----------- consultation section --------->
+    <!------------------------ consultation section --------->
     <section class="consultation-section" id="consultation-section">
       <div class="container">
-        <div class="row my-5 px-3">
+        <div class="row px-3">
           <div class="col-12 col-lg-4 py-3 reveal-left">
             <h3 class="text-title">24시간 상담문의</h3>
             <h4 class="text-phone">1588-2555</h4>
@@ -530,10 +526,7 @@
         <div class="row pt-4">
           <div class="col-3 footer-logo reveal-left">
             <a class="navbar-brand mx-0" href="#"
-              ><img
-                src="https://api.tagoplus.co.kr/files/download/SiteInfo/vOsDaYEy.png"
-                alt="logo"
-                class="logo"
+              ><img src="./images/logo.png" alt="logo" class="logo"
             /></a>
           </div>
           <div class="col-5 py-3 reveal-bottom">
@@ -559,9 +552,10 @@
         </div>
       </div>
     </section>
-    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <div class="loader">
+      <img src="./images/loading.gif" alt="" />
+    </div>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
